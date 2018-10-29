@@ -67,10 +67,10 @@ const App = () => {
     <div className="game">
       <div className="help">
         {(state == playStates.playing || state === playStates.stopped) &&
-          "Pick numbers that sum to the target in 15 seconds "}
+          "Pick numbers that sum to the target in 15 seconds"}
         {state == playStates.lose && "You lose"}
         {state == playStates.win && "You Won"}
-        {state == playStates.stopped && "to begin press Start"}
+        {state == playStates.stopped && ". To begin press Start"}
       </div>
       <Block classes={["target"]} value={target} />
       <Block classes={["sum"]} value={valor} />
